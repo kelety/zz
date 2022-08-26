@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>심리테스트 게시판</title>
+</head>
+
+<body>
+    <!-- CRUD Create Read Update Delete -->
+    <h1>write.html</h1>
+    <hr>
+    <form id="id_wform" action="write_action.html" method="get">
+        <table border="1">
+            <tr>
+                <td>제목</td>
+                <td><input type="text" name="nm_title" value="" required></td>
+            </tr>
+            <tr>
+                <td>작성자</td>
+                <td><input type="text" name="nm_writer" value="" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    내용<br>
+                    <textarea name="nm_content" rows="10" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="글 올리기">
+                    <input type="reset" value="다시쓰기">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
